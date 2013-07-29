@@ -1,4 +1,4 @@
-# Scrapes title title, path, platform, publisher, score, 
+# Scrapes the title, path, platform, publisher, score, 
 # and release date for each game in IGN's index. Optionally generates a csv
 # with this scraped data.
 #
