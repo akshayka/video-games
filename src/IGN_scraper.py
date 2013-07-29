@@ -1,4 +1,4 @@
-# Scrapes game title, ID, platform, publisher, score, 
+# Scrapes title title, path, platform, publisher, score, 
 # and release date for each game in IGN's index. Optionally generates a csv
 # with this scraped data.
 #
@@ -14,7 +14,7 @@
 # (0 by default) to the end index, inclusive. 
 #
 # Written by Akshay Agrawal
-# July 28, 2013 
+# July 28, 2013
 
 import urllib2 				  # For URL opening
 from bs4 import BeautifulSoup # For HTML parsing
