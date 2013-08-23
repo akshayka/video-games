@@ -211,7 +211,6 @@ def main():
 	parser.add_argument("-v", "--verbosity", default=False, action='store_true', 
 		help="print logging data")
 
-	outfile = None
 	args = parser.parse_args()
 	# The script's work is worthless if neither -w or -v is specified.
 	if (args.writetofile is None) and (not args.verbosity):
@@ -232,6 +231,7 @@ def main():
 			(args.endindex, INDEX_INCREMENT))
 		return 1
 	# Open the outfile.
+	outfile = None
 	if args.writetofile is not None:
 		try:
 			outfile = open(args.writetofile, "w")
