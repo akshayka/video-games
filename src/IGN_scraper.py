@@ -132,7 +132,7 @@ def open_url_and_parse(*args):
 			print_lock.release()
 		try:
 			urlopen_lock.acquire()
-			urlfile = urllib2.urlopen(curr_url);
+			urlfile = urllib2.urlopen(curr_url)
 			urlopen_lock.release()
 		except urllib2.HTTPError as e:
 			stderr_lock.acquire()
